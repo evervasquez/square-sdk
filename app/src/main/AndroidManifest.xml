@@ -19,14 +19,13 @@
         <activity android:name=".ManualCodeEntryActivity"></activity>
         <activity android:name=".ScanQRCodeActivity" android:theme="@style/JewelTheme"/>
         <activity android:name=".StartAuthorizeActivity" />
-        <activity android:name=".CheckoutActivity" android:theme="@style/JewelTheme"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".CheckoutActivity" android:theme="@style/JewelTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

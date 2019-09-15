@@ -10,6 +10,8 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        versionCode 1020
+        versionName "1.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     dexOptions {
@@ -54,6 +56,6 @@ dependencies {
     def readerSdkVersion = "1.3.2"
     implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
     runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
-
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
 }
